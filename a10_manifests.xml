@@ -1,14 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
+
   <!-- Device tree -->
-  <project name="RMX1805/device_oppo_RMX1805" 
-           path="device/oppo/RMX1805" 
-           remote="github" 
+  <project name="RMX1805/device_oppo_RMX1805"
+           path="device/oppo/RMX1805"
+           remote="github"
            revision="lineage-17.1" />
-  
+
   <!-- Vendor tree -->
-  <project name="RMX1805/vendor_oppo" 
-           path="vendor/oppo" 
-           remote="github" 
+  <project name="RMX1805/vendor_oppo"
+           path="vendor/oppo"
+           remote="github"
            revision="lineage-17.1" />
+
+  <!-- Remove unnecessary repos -->
+  <remove-project name="device/google/cuttlefish" />
+  <remove-project name="device/google/cuttlefish_kernel" />
+  <remove-project name="LineageOS/android_device_generic_goldfish" />
+  <remove-project name="LineageOS/android_device_generic_goldfish-opengl" />
+  <remove-project name="LineageOS/android_external_ant-wireless_antnative" />
+  <remove-project name="LineageOS/android_external_ant-wireless_ant_service" />
+  <remove-project name="LineageOS/android_external_bash" />
+  <remove-project name="LineageOS/android_external_libncurses" />
+  <remove-project name="LineageOS/android_external_nano" />
+  <remove-project name="LineageOS/android_external_openssh" />
+  <remove-project name="LineageOS/android_external_p7zip" />
+  <remove-project name="LineageOS/android_external_rsync" />
+  <remove-project name="LineageOS/android_external_unrar" />
+  <remove-project name="LineageOS/android_external_vim" />
+  <remove-project name="LineageOS/android_packages_apps_Eleven" />
+  <remove-project name="LineageOS/android_packages_providers_PartnerBookmarksProvider" />
+  <remove-project name="LineageOS/android_packages_screensavers_Basic" />
+  <remove-project name="LineageOS/android_packages_screensavers_PhotoTable" />
+  <remove-project name="platform/external/adhd" />
+  <remove-project name="platform/external/crosvm" />
+  <remove-project name="platform/external/iperf3" />
+  <remove-project name="platform/external/tcpdump" />
+  <remove-project name="platform/external/virglrenderer" />
+  <remove-project name="platform/external/wayland" />
+  <remove-project name="platform/external/wayland-protocols" />
+
 </manifest>
